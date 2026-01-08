@@ -27,3 +27,17 @@ return count
 const result2 = countVowels("programming");
 // Output: 3
 console.log(result2);
+
+// Problem 3: Check for Palindrome
+// Write a function that checks if a string is a palindrome (reads the same forward and backward).
+
+const checkPalindrome = (str) => {
+    const reverse = str.split('').reverse().join('')
+    return reverse ===str
+}
+// Input: "madam"
+
+const result3 = checkPalindrome('madam');
+console.log(result3);
+// Output: true
+ 

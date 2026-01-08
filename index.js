@@ -122,5 +122,24 @@ console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
 console.log(capitalizeWords("hello world"));
 // Output: "Hello World"
 
+// Problem 9: Find the Factorial of a Number
+// Write a function that calculates the factorial of a number using a loop.
+const factorial = (num) => {
+     
+  // Step 1: Start with result = 1
+  let result = 1;
+  // Step 2: Loop from 1 to num
+  for (let i = 1; i <= num; i++) {
+    // Step 3: Multiply result with current number
+    result = result * i;
+  }
+  // Step 4: Return the final result
+  return result;
+};
+
+// Example
+console.log(factorial(5));
+//Output 120
+
 
 

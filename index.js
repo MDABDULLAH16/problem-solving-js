@@ -1,28 +1,26 @@
 // Problem 1: Reverse a String
 // Write a function that takes a string and returns it reversed.
 
-const reversed = (str) => [...str].reverse().join('');
+const reversed = (str) => [...str].reverse().join("");
 // Input: "hello"
-const result1 = reversed('hello');
+const result1 = reversed("hello");
 console.log(result1);
 // Output: "olleh"
-
 
 // Problem 2: Count Vowels in a String
 // Write a function that counts how many vowels (a, e,i, o, u) are in a given string.
 const countVowels = (str) => {
-    const arr = [...str];
-    const vowels = 'aeiou'
-    let count = 0;
- for (const alfa of arr) {
-       if (vowels.includes(alfa)) {
-        count++
-       }
-       
- }
-return count
-}
- 
+  const arr = [...str];
+  const vowels = "aeiou";
+  let count = 0;
+  for (const alfa of arr) {
+    if (vowels.includes(alfa)) {
+      count++;
+    }
+  }
+  return count;
+};
+
 // Input: "programming"
 const result2 = countVowels("programming");
 // Output: 3
@@ -32,12 +30,44 @@ console.log(result2);
 // Write a function that checks if a string is a palindrome (reads the same forward and backward).
 
 const checkPalindrome = (str) => {
-    const reverse = str.split('').reverse().join('')
-    return reverse ===str
-}
+  const reverse = str.split("").reverse().join("");
+  return reverse === str;
+};
 // Input: "madam"
 
-const result3 = checkPalindrome('madam');
+const result3 = checkPalindrome("madam");
 console.log(result3);
 // Output: true
- 
+
+// Problem 4: Find the Maximum Number
+// Write a function that takes an array of numbers and returns the largest number.
+// Example:
+const findMaxNumber = (arr) => {
+  const max = Math.max(...arr);
+
+  return max;
+};
+// Input: [5, 1, 9, 3]
+const result4 = findMaxNumber([5, 1, 9, 3]);
+console.log(result4);
+// Output: 9
+
+// Problem 5: Remove Duplicates from an Array
+// Write a function that removes all duplicate numbers from an array.
+const removeDuplicates = (arr) => {
+  const result = [];
+
+  for (let num of arr) {
+    if (!result.includes(num)) {
+      result.push(num);
+    }
+  }
+
+  return result;
+};
+
+// Input: [1, 2, 2, 3, 4, 4]
+const result5 = removeDuplicates([1, 2, 2, 3, 4, 4]);
+console.log(result5);
+
+// Output: [1, 2, 3, 4]

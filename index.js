@@ -69,5 +69,19 @@ const removeDuplicates = (arr) => {
 // Input: [1, 2, 2, 3, 4, 4]
 const result5 = removeDuplicates([1, 2, 2, 3, 4, 4]);
 console.log(result5);
-
 // Output: [1, 2, 3, 4]
+
+// Problem 6: Sum of All Numbers in an Array
+// Write a function that returns the sum of all numbers in an array.
+const sumArray = (arr) => {
+  let sum = 0;
+
+  for (let num of arr) {
+    sum += num;
+  }
+
+  return sum;
+};
+
+// Example
+console.log(sumArray([1, 2, 3, 4])); // 10

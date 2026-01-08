@@ -82,6 +82,18 @@ const sumArray = (arr) => {
 
   return sum;
 };
-
 // Example
 console.log(sumArray([1, 2, 3, 4])); // 10
+
+// Problem 7: Find Even Numbers in an Array
+// Write a function that returns all even numbers from a given array.
+
+const findEvenNumbers = (arr) => {
+  return arr.filter(num => num % 2 === 0);
+};
+
+ // Input: [1, 2, 3, 4, 5, 6]
+console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
+// Output: [2, 4, 6]
+
+// Output: [2, 4, 6]

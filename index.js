@@ -93,7 +93,34 @@ const findEvenNumbers = (arr) => {
 };
 
  // Input: [1, 2, 3, 4, 5, 6]
-console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
+console.log(findEvenNumbers([1, 2, 3, 4, 5, 6])); 
 // Output: [2, 4, 6]
 
-// Output: [2, 4, 6]
+
+
+// Problem 8: Capitalize First Letter of Each Word
+// Write a function that capitalizes the first letter of each word in a string.
+ const capitalizeWords = (str) => {
+
+  // Step 1: Split the string into words
+  const words = str.split(" ");
+   // Step 2: Capitalize each word
+  const capitalizedWords = words.map(word => {
+    const firstLetter = word.charAt(0).toUpperCase();  
+    const restOfWord = word.slice(1);                  
+    const fullWord = firstLetter + restOfWord;        
+    return fullWord;
+  });
+
+  // Step 3: Join words back into a sentence
+  const result = capitalizedWords.join(" ");
+
+  return result;
+};
+// Input: "hello world"
+// Example
+console.log(capitalizeWords("hello world"));
+// Output: "Hello World"
+
+
+

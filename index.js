@@ -141,5 +141,39 @@ const factorial = (num) => {
 console.log(factorial(5));
 //Output 120
 
+// Problem 10: PingPong Challenge
+// Write a function that prints numbers from 1 to 20.
+// For multiples of 3, print "Ping"
+// For multiples of 5, print "Pong"
+// For multiples of both 3 and 5, print "PingPong"
+// If the number is not a multiple of 3 or 5, print the number itself
+const pingPong = () => {
+  // Step 1: Loop from 1 to 20
+  for (let i = 1; i <= 20; i++) {
+    let output = ""; 
 
+    // Step 3: Check multiples of 3
+    if (i % 3 === 0) {
+      output += "Ping";
+    }
 
+    // Step 4: Check multiples of 5
+    if (i % 5 === 0) {
+      output += "Pong";
+    }
+
+    // Step 5: If not multiple of 3 or 5, use the number itself
+    if (output === "") {
+      output = i;
+    }
+
+    // Step 6: Print the result
+    console.log(output);
+  }
+};
+
+ 
+pingPong();
+
+// Example Output:
+// 1, 2, Ping, 4, Pong, Ping, 7, 8, Ping, Pong, 11, Ping, 13, 14, PingPong, 16 …..
